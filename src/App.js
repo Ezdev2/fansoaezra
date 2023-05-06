@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/fansoaezra" exact element={<Home />}/>
+        <Route path="/fansoaezra/" exact element={<Home />}/>
       </Routes>
     </Router>
   );
