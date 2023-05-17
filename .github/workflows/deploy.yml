@@ -3,7 +3,7 @@
     on:
       push:
         branches:
-        - gh-pages # change this to the branch you want to deploy from
+        - main # change this to the branch you want to deploy from
       # Allows you to run this workflow manually from the Actions tab on GitHub.
       workflow_dispatch:
 
