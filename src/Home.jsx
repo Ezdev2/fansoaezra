@@ -37,7 +37,7 @@ function Home() {
                 </li>
               </ul>
               <div className="tracking-wide text-sm font-medium">
-                Want to learn more : <a href="https://github.com/Ezdev2/fansoaezra#d%C3%A9ploiement-dun-site-sur-github-pages">Click here!</a>
+                Want to learn more : <a href="https://github.com/Ezdev2/fansoaezra#d%C3%A9ploiement-dun-site-sur-github-pages" className="text-indigo-500">Click here!</a>
               </div>
             </div>
           </div>
