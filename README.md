@@ -64,9 +64,12 @@ Cette configuration GitHub Actions automatise le processus de déploiement en ef
 Envoyez (commit et push) les modifications vers votre dépôt. Cette dernière modification déclenchera le flux de travail de déploiement.
 
 ## 4. Visitez votre site
-Maintenant, allez dans le dépôt GitHub, sélectionnez la branche indiquée dans le fichier ``deploy.yml``, et puis cliquez sur ``Setting``, ``Code and automation`` et ``Pages``. L'URL de votre site web est maintenant disponible.
+Maintenant, allez dans le dépôt GitHub, sélectionnez la branche indiquée dans le fichier ``deploy.yml``, et puis cliquez sur ``Setting``, ``Code and automation`` et ``Pages``. 
+Dans la section ``Build and deployment`` et puis ``Source``, choisissez ``Github Actions`` :
 
 [![URL](https://github.com/Ezdev2/fansoaezra/blob/main/url.jpg)](https://github.com/Ezdev2/fansoaezra/blob/main/url.jpg)
+
+L'URL de votre site web est maintenant disponible.
 
 ## 5. Votre site est déployé
 Votre site est déployé sur ``https://{username}.github.io/{repository}``, mais vous pouvez configurer votre propre nom de domaine dans la section ``Custom domain name``. Pour en savoir plus, [consultez la documentation de GitHub sur les domaines personnalisés](https://docs.github.com/fr/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
