@@ -2,7 +2,7 @@
 
 Idéal pour déployer un site qui utilise des frameworks !
 
-[Pour déployer un site qui n'utilise que HTML/CSS et/ou Bootstrap](https://github.com/Ezdev2/fansoaezra/blob/main/README.md#remarque)
+[Pour déployer un site qui n'utilise que HTML/CSS et/ou Bootstrap]([https://github.com/Ezdev2/fansoaezra/blob/main/README.md#remarque](https://github.com/Ezdev2/fansoaezra/blob/main/README.md#d%C3%A9ploiement-dun-site-htmlcss-etou-bootstrap))
 
 ## Les étapes pour déployer un site utilisant un framework sur Github Pages
 
@@ -92,5 +92,5 @@ Par exemple, si le nom de votre dépôt est ``test-gh``, l'URL de votre applicat
 
 ---
 
-## Déploiement d'un site HTML/CSS et/ou Bootstrap
+## Remarque
 Dans mon exemple, j'ai créé une application React Js, donc vous devriez vous renseigner sur les exigences de votre technologie en ce qui concerne le déploiement sur GitHub Pages. Par exemple, dans la technologie Astro, au lieu d'ajouter ``homepage``, ``predeploy`` et ``deploy`` dans package.json, vous devez ajouter : ``site: {URL}``, ``base: "/{repository}"`` dans ``astro.config.mjs.``
