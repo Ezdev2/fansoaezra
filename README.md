@@ -65,6 +65,7 @@ Envoyez (commit et push) les modifications vers votre dépôt. Cette dernière m
 
 ## 4. Visitez votre site
 Maintenant, allez dans le dépôt GitHub, sélectionnez la branche indiquée dans le fichier ``deploy.yml``, et puis cliquez sur ``Setting``, ``Code and automation`` et ``Pages``. L'URL de votre site web est maintenant disponible.
+[![URL](https://github.com/Ezdev2/fansoaezra/blob/main/url.jpg)](https://github.com/Ezdev2/fansoaezra/blob/main/url.jpg)
 
 ## 5. Votre site est déployé
 Votre site est déployé sur ``https://{username}.github.io/{repository}``, mais vous pouvez configurer votre propre nom de domaine dans la section ``Custom domain name``. Pour en savoir plus, [consultez la documentation de GitHub sur les domaines personnalisés](https://docs.github.com/fr/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
@@ -77,6 +78,10 @@ Par exemple, si le nom de votre dépôt est ``test-gh``, l'URL de votre applicat
 ---
 ## Remarque
 
-1. Pour déployer un site **HTML/CSS ou Bootstrap**, vous n'avez pas besoin de suivre ces étapes. Il vous suffit simplement de mettre les fichiers dans un dossier ``docs`` et de placer le fichier ``index.html`` à la racine de ce dossier. Vous pourrez ensuite visiter votre site déployé comme indiqué à l'étape 4.**
+1. Pour déployer un site **HTML/CSS ou Bootstrap**, vous n'avez pas besoin de suivre ces étapes. Il vous suffit simplement de mettre les fichiers dans un dossier ``docs`` et de placer le fichier ``index.html`` à la racine de ce dossier. Vous pourrez ensuite visiter votre site déployé comme indiqué à l'étape 4.
+* Dans la section ``Build and deployment`` et puis ``Source``, choisissez ``Deploy from a branch`` au lieu de ``Github Actions``:
+[![URL](https://github.com/Ezdev2/fansoaezra/blob/main/branch.jpg)](https://github.com/Ezdev2/fansoaezra/blob/main/branch.jpg)
+* Dans ``branch``, choisissez la branche à déployer et puis ``docs``:
+[![URL](https://github.com/Ezdev2/fansoaezra/blob/main/docs.jpg)](https://github.com/Ezdev2/fansoaezra/blob/main/docs.jpg)
 
-2. Dans mon exemple, j'ai créé une application React Js, donc vous devriez vous renseigner sur les exigences de votre technologie en ce qui concerne le déploiement sur GitHub Pages. Par exemple, dans la technologie Astro, au lieu d'ajouter ``homepage``, ``predeploy`` et ``deploy`` dans package.json, vous devez ajouter : ``site: {URL}``, ``base: "/{repository}"`` dans ``astro.config.mjs.``
+3. Dans mon exemple, j'ai créé une application React Js, donc vous devriez vous renseigner sur les exigences de votre technologie en ce qui concerne le déploiement sur GitHub Pages. Par exemple, dans la technologie Astro, au lieu d'ajouter ``homepage``, ``predeploy`` et ``deploy`` dans package.json, vous devez ajouter : ``site: {URL}``, ``base: "/{repository}"`` dans ``astro.config.mjs.``
