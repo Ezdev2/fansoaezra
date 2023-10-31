@@ -55,10 +55,10 @@ env:
 CI: true
 ```
 Cette configuration GitHub Actions automatise le processus de déploiement en effectuant des étapes spécifiques, telles que 
-*la récupération du code source, 
-*la configuration de l'environnement Node.js, 
-*l'installation des dépendances, 
-*et enfin le déclenchement du script de déploiement pour publier votre site sur GitHub Pages chaque fois qu'il y a un ``push`` sur la branche principale de votre dépôt. Cela rend le déploiement plus fiable et évite les déploiements manuels répétitifs.
+* la récupération du code source, 
+* la configuration de l'environnement Node.js, 
+* l'installation des dépendances, 
+* et enfin le déclenchement du script de déploiement pour publier votre site sur GitHub Pages chaque fois qu'il y a un ``push`` sur la branche principale de votre dépôt. Cela rend le déploiement plus fiable et évite les déploiements manuels répétitifs.
 
 ## 3. Commit / push
 Envoyez (commit et push) les modifications vers votre dépôt. Cette dernière modification déclenchera le flux de travail de déploiement.
