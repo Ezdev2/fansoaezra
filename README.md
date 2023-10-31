@@ -83,7 +83,7 @@ Par exemple, si le nom de votre dépôt est ``test-gh``, l'URL de votre applicat
 
 ## Déploiement d'un site HTML/CSS et/ou Bootstrap
 
-1. Pour déployer un site **HTML/CSS ou Bootstrap**, vous n'avez pas besoin de suivre ces étapes. Il vous suffit simplement de mettre les fichiers dans un dossier ``docs`` et de placer le fichier ``index.html`` à la racine de ce dossier. Vous pourrez ensuite visiter votre site déployé comme indiqué à l'étape 4.
+1. Pour déployer un site **HTML/CSS ou Bootstrap**, vous n'avez pas besoin de suivre ces étapes. Il vous suffit simplement de mettre les fichiers dans un dossier ``docs`` et de placer le fichier ``index.html`` à la racine de ce dossier. Maintenant, allez dans le dépôt GitHub, cliquez sur ``Setting``, ``Code and automation`` et ``Pages``.
    
 * Dans la section ``Build and deployment`` et puis ``Source``, choisissez ``Deploy from a branch`` au lieu de ``Github Actions``:
   
