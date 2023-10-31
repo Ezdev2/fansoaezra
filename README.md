@@ -17,14 +17,14 @@ Idéal pour déployer un site qui utilise des frameworks !
 ```
 Cette configuration permet d'indiquer l'URL de base de votre site GitHub Pages dans ``homepage`` et de définir deux scripts, l'un pour préparer votre site avant le déploiement ``predeploy`` et l'autre pour effectuer le déploiement réel ``deploy`` en utilisant l'outil ``gh-pages``. Cette configuration est essentielle pour automatiser le processus de déploiement de votre site sur GitHub Pages.
 
-1. ``"homepage"``: ``"https://{username}.github.io/{repository}/"`` : Cette ligne fait partie du fichier package.json et spécifie l'URL de base où votre site sera déployé.
+1. ``"homepage": "https://{username}.github.io/{repository}/"``: Cette ligne fait partie du fichier package.json et spécifie l'URL de base où votre site sera déployé.
 Plus précisément :
 * {username} : Remplacez ceci par votre nom d'utilisateur GitHub. Par exemple, s'il s'agit de ``ezdev2``, cette partie deviendrait ``ezdev2``.
 * {repository} : Remplacez ceci par le nom de votre dépôt GitHub. Par exemple, si le nom de votre dépôt est ``fansoaezra``, cette partie deviendrait ``fansoaezra``. Ensemble, cette URL détermine où votre site sera accessible une fois déployé sur GitHub Pages. 
 2. ``"scripts"`` : Cette section du fichier package.json permet de définir des scripts qui peuvent être exécutés à l'aide de la commande ``npm run nom_du_script``. Voici ce que font les scripts définis ici :
 
-* ``"predeploy"``: ``"npm run build"`` : Ce script est exécuté avant le déploiement.
-* ``"deploy"``: ``"gh-pages -d build"`` : Ce script est exécuté pour déployer votre site sur GitHub Pages.
+* ``"predeploy": "npm run build"`` : Ce script est exécuté avant le déploiement.
+* ``"deploy": "gh-pages -d build"`` : Ce script est exécuté pour déployer votre site sur GitHub Pages.
 
 ## 2. Configuration :
 Créez un dossier et un fichier comme suit :  ``.github/workflos/deploy.yml`` et collez ces lignes de code dans le fichier ``deploy.yml``
@@ -77,9 +77,11 @@ Votre site est déployé sur ``https://{username}.github.io/{repository}``, mais
 Par exemple, si le nom de votre dépôt est ``test-gh``, l'URL de votre application sera  ``https://{username}.github.io/test-gh/``
 
 ---
-## Remarque
+
+## Déploiement d'un site HTML/CSS et/ou Bootstrap
 
 1. Pour déployer un site **HTML/CSS ou Bootstrap**, vous n'avez pas besoin de suivre ces étapes. Il vous suffit simplement de mettre les fichiers dans un dossier ``docs`` et de placer le fichier ``index.html`` à la racine de ce dossier. Vous pourrez ensuite visiter votre site déployé comme indiqué à l'étape 4.
+   
 * Dans la section ``Build and deployment`` et puis ``Source``, choisissez ``Deploy from a branch`` au lieu de ``Github Actions``:
   
 [![URL](https://github.com/Ezdev2/fansoaezra/blob/main/branch.jpg)](https://github.com/Ezdev2/fansoaezra/blob/main/branch.jpg)
@@ -88,4 +90,7 @@ Par exemple, si le nom de votre dépôt est ``test-gh``, l'URL de votre applicat
   
 [![URL](https://github.com/Ezdev2/fansoaezra/blob/main/docs.jpg)](https://github.com/Ezdev2/fansoaezra/blob/main/docs.jpg)
 
-3. Dans mon exemple, j'ai créé une application React Js, donc vous devriez vous renseigner sur les exigences de votre technologie en ce qui concerne le déploiement sur GitHub Pages. Par exemple, dans la technologie Astro, au lieu d'ajouter ``homepage``, ``predeploy`` et ``deploy`` dans package.json, vous devez ajouter : ``site: {URL}``, ``base: "/{repository}"`` dans ``astro.config.mjs.``
+---
+
+## Déploiement d'un site HTML/CSS et/ou Bootstrap
+Dans mon exemple, j'ai créé une application React Js, donc vous devriez vous renseigner sur les exigences de votre technologie en ce qui concerne le déploiement sur GitHub Pages. Par exemple, dans la technologie Astro, au lieu d'ajouter ``homepage``, ``predeploy`` et ``deploy`` dans package.json, vous devez ajouter : ``site: {URL}``, ``base: "/{repository}"`` dans ``astro.config.mjs.``
