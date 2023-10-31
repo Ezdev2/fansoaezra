@@ -4,7 +4,7 @@ Idéal pour déployer un site qui utilise des frameworks !
 
 [Pour déployer un site qui n'utilise que HTML/CSS et/ou Bootstrap](https://github.com/Ezdev2/fansoaezra/blob/main/README.md#remarque)
 
----
+## Les étapes pour déployer un site utilisant un framework sur Github Pages
 
 ## 1. Ajoutez ces lignes dans "package.json":
 
@@ -15,6 +15,16 @@ Idéal pour déployer un site qui utilise des frameworks !
 "deploy": "gh-pages -d build"
 }
 ```
+Cette configuration permet d'indiquer l'URL de base de votre site GitHub Pages dans ``homepage`` et de définir deux scripts, l'un pour préparer votre site avant le déploiement ``predeploy`` et l'autre pour effectuer le déploiement réel ``deploy`` en utilisant l'outil ``gh-pages``. Cette configuration est essentielle pour automatiser le processus de déploiement de votre site sur GitHub Pages.
+
+1. ``"homepage"``: ``"https://{username}.github.io/{repository}/"`` : Cette ligne fait partie du fichier package.json et spécifie l'URL de base où votre site sera déployé.
+Plus précisément :
+* {username} : Remplacez ceci par votre nom d'utilisateur GitHub. Par exemple, s'il s'agit de ``ezdev2``, cette partie deviendrait ``ezdev2``.
+* {repository} : Remplacez ceci par le nom de votre dépôt GitHub. Par exemple, si le nom de votre dépôt est ``fansoaezra``, cette partie deviendrait ``fansoaezra``. Ensemble, cette URL détermine où votre site sera accessible une fois déployé sur GitHub Pages. 
+2. ``"scripts"`` : Cette section du fichier package.json permet de définir des scripts qui peuvent être exécutés à l'aide de la commande ``npm run nom_du_script``. Voici ce que font les scripts définis ici :
+
+* ``"predeploy"``: ``"npm run build"`` : Ce script est exécuté avant le déploiement.
+* ``"deploy"``: ``"gh-pages -d build"`` : Ce script est exécuté pour déployer votre site sur GitHub Pages.
 
 ## 2. Configuration :
 Créez un dossier et un fichier comme suit :  ``.github/workflos/deploy.yml`` et collez ces lignes de code dans le fichier ``deploy.yml``
@@ -44,6 +54,11 @@ run: npm run deploy
 env:
 CI: true
 ```
+Cette configuration GitHub Actions automatise le processus de déploiement en effectuant des étapes spécifiques, telles que 
+*la récupération du code source, 
+*la configuration de l'environnement Node.js, 
+*l'installation des dépendances, 
+*et enfin le déclenchement du script de déploiement pour publier votre site sur GitHub Pages chaque fois qu'il y a un ``push`` sur la branche principale de votre dépôt. Cela rend le déploiement plus fiable et évite les déploiements manuels répétitifs.
 
 ## 3. Commit / push
 Envoyez (commit et push) les modifications vers votre dépôt. Cette dernière modification déclenchera le flux de travail de déploiement.
