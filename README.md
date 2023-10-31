@@ -1,6 +1,7 @@
 # Déploiement d'un site sur GitHub Pages
 
 Idéal pour déployer un site qui utilise des frameworks !
+[Pour déployer un site qui n'utilise que HTML/CSS et/ou Bootstrap](https://github.com/Ezdev2/fansoaezra/blob/main/README.md#remarque)
 
 ## 1. Ajoutez ces lignes dans "package.json":
 
