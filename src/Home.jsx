@@ -20,7 +20,7 @@ function Home() {
               </div>
               <h1 className="mt-2 text-3xl font-extrabold text-gray-900">
                 My name is Ezra, <br />I am a{" "}
-                <span className="text-indigo-500">JavaScript</span> developer
+                <span className="text-indigo-500">fron-tend web</span> developer
               </h1>
               <div className="tracking-wide text-sm font-medium">
                 I'd like to discuss the benefits of using Github Pages for
@@ -36,6 +36,9 @@ function Home() {
                   deployments.
                 </li>
               </ul>
+              <div className="tracking-wide text-sm font-medium">
+                Want to learn more : <a href="https://github.com/Ezdev2/fansoaezra#d%C3%A9ploiement-dun-site-sur-github-pages">Click here!</a>
+              </div>
             </div>
           </div>
         </div>
