@@ -58,7 +58,7 @@ Par exemple, si le nom de votre repository est ``test-gh``, l'URL de votre appli
 ---
 ## Remarque
 
-***1. Pour déployer un site HTML/CSS ou Bootstrap, il suffit de mettre les fichiers dans un dossier ``docs`` et mettez le fichier index.html dans la racine de ce dossier.***
+***1. Pour déployer un site HTML/CSS ou Bootstrap, vu=ous n'aurez pas à suivre ces étapes il suffit simplement de mettre les fichiers dans un dossier ``docs`` et mettez le fichier index.html dans la racine de ce dossier et vous pouvez aller visiter votre site déployé comme indiqué sur l'étape 4.***
 
 ***2. Dans mon exemple j'ai créé une application React Js, donc vous devriez se documenter un peu sur les exigences de votre technologie par rapport au déploiement sur Github Pages.
 Par exemple, dans la technologie Astro, au lieu d'ajouter "homepage", "predeploy" et "deploy" dans package.json vous ajouter : site:{URL},
