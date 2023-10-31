@@ -2,7 +2,7 @@
 
 Idéal pour déployer un site qui utilise des frameworks !
 
-[Pour déployer un site qui n'utilise que HTML/CSS et/ou Bootstrap]([https://github.com/Ezdev2/fansoaezra/blob/main/README.md#remarque](https://github.com/Ezdev2/fansoaezra/blob/main/README.md#d%C3%A9ploiement-dun-site-htmlcss-etou-bootstrap))
+[Pour déployer un site qui n'utilise que HTML/CSS et/ou Bootstrap](https://github.com/Ezdev2/fansoaezra/blob/main/README.md#d%C3%A9ploiement-dun-site-htmlcss-etou-bootstrap)
 
 ## Les étapes pour déployer un site utilisant un framework sur Github Pages
 
