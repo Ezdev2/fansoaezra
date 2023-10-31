@@ -69,7 +69,7 @@ Dans la section ``Build and deployment`` et puis ``Source``, choisissez ``Github
 
 [![URL](https://github.com/Ezdev2/fansoaezra/blob/main/url.jpg)](https://github.com/Ezdev2/fansoaezra/blob/main/url.jpg)
 
-Attendez une ou deux minute et/ou rafraîchir la page. L'URL de votre site web est maintenant disponible.
+Attendez une ou deux minutes et/ou rafraîchir la page. L'URL de votre site web est maintenant disponible.
 
 ## 5. Votre site est déployé
 Votre site est déployé sur ``https://{username}.github.io/{repository}``, mais vous pouvez configurer votre propre nom de domaine dans la section ``Custom domain name``. Pour en savoir plus, [consultez la documentation de GitHub sur les domaines personnalisés](https://docs.github.com/fr/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
@@ -93,7 +93,7 @@ Par exemple, si le nom de votre dépôt est ``test-gh``, l'URL de votre applicat
   
 [![URL](https://github.com/Ezdev2/fansoaezra/blob/main/docs.jpg)](https://github.com/Ezdev2/fansoaezra/blob/main/docs.jpg)
 
-Attendez une ou deux minute et/ou rafraîchir la page. L'URL de votre site web est maintenant disponible.
+Attendez une ou deux minutes et/ou rafraîchir la page. L'URL de votre site web est maintenant disponible.
 
 ---
 
