@@ -62,13 +62,13 @@ function Home() {
       time: "14:23",
       notification: false,
     },
-    {
-      name: "Lisa",
-      status: "D'accord",
-      avatar: avatar3,
-      time: "14:23",
-      notification: false,
-    },
+    // {
+    //   name: "Lisa",
+    //   status: "D'accord",
+    //   avatar: avatar3,
+    //   time: "14:23",
+    //   notification: false,
+    // },
     {
       name: "Lisa",
       status: "D'accord",
@@ -95,17 +95,17 @@ function Home() {
   const onChange = (checked) => {
     console.log(`switch to ${checked}`);
   };
-  // const chatContainerRef = useRef(null);
+  const chatContainerRef = useRef(null);
 
-  // useEffect(() => {
-  //   // Déplacer le scroll vers le bas
-  //   chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
-  // }, []);
+  useEffect(() => {
+    // Déplacer le scroll vers le bas
+    chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+  }, []);
   return (
     <div className="bg-darkColor flex flex-col h-screen w-screen overflow-y-hidden">
       {/* Header */}
       <div className="flex justify-between items-center py-2 px-[54px]">
-        <div className="flex gap-[54px] items-center py-[24px]">
+        <div className="flex gap-[54px] items-center py-[18px] xl:py-[24px]">
           <Switch
             onChange={onChange}
             className="switch-custom"
@@ -154,8 +154,8 @@ function Home() {
 
               <hr className="divider" />
               {/* Liste des messages */}
-              <div className="py-[20px] px-[22px] flex flex-col gap-[48px] overflow-y-auto">
-                <div className="h-[10%] flex">
+              <div className="py-[20px] px-[22px] flex flex-col gap-[48px] overflow-y-hidden">
+                <div className="h-[5%] flex">
                   <div className="flex-1 flex flex-col gap-[12px] items-center">
                     <div className="flex gap-[8px]">
                       <p className="text-violet">Conversations</p>
@@ -175,7 +175,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="h-[90%] flex flex-col overflow-y-auto">
+                <div className="h-[45%] xl:h-[85%] flex flex-col overflow-y-auto">
                   {dataMessage.map((item, index) => (
                     <div key={index} className="flex p-[16px]">
                       <div className="flex-1 flex gap-[18px]">
@@ -196,7 +196,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex-1 flex flex-col">
+            <div className="h-[70%] xl:flex-1 xl:h-[100%] flex flex-col">
               <div className="relative video-bloc flex-1 bg-grise flex flex-col">
                 <div className="video-bar flex justify-between items-center py-[14px] px-[20px]">
                   <div className="flex gap-[12px]">
@@ -215,7 +215,7 @@ function Home() {
                   <img src={smallPerson} alt="Background" />
                 </div>
                 <div className="absolute flex flex-col justify-center items-center w-full bottom-0">
-                  <img src={person} className="max-w-[50%]" alt="Background" />
+                  <img src={person} className="max-w-[40%] xl:max-w-[100%]" alt="Background" />
                   <div className="video-bar w-full flex justify-between items-center py-[14px] px-[20px]">
                     <div className="flex gap-[40px]">
                       <img src={addUser} alt="Background" />
@@ -259,8 +259,9 @@ function Home() {
             </div>
           </div>
           {/* conversation */}
-          <div className="h-[95%] relative">
+          <div className="h-[70%] xl:h-[90%] relative">
             <div
+              ref={chatContainerRef}
               className="flex flex-col gap-8 items-end w-full max-h-[70vh] overflow-y-auto"
             >
               {/* current host */}

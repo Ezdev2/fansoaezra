@@ -2,6 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1200px", // Ajustez cette valeur en fonction de vos besoins
+      xl: "1920px",
+    },
     components: {
       Switch: {
         handleBg: "#202327",

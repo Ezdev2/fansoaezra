@@ -71,7 +71,7 @@ p {
 .profile {
   left: -5px;
   top: 10px;
-  background-color: black;
+  background-color: var(--color-dark);
 }
 
 .responseBg {
@@ -81,6 +81,12 @@ p {
       rgba(0, 0, 0, 0) 74.91%
     ),
     var(--mauve-2, #8d8aff);
+}
+
+/* Style for scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
 
 .square-text {
