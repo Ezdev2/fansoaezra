@@ -261,7 +261,7 @@ function Home() {
             </div>
           </div>
           {/* conversation */}
-          <div className="h-[85%] relative">
+          <div className="h-[80%] relative">
             <div
               ref={chatContainerRef}
               className="h-[80%] flex flex-col gap-8 items-end w-full overflow-y-auto"
