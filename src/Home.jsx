@@ -215,7 +215,7 @@ function Home() {
                   <img src={smallPerson} alt="Background" />
                 </div>
                 <div className="absolute flex flex-col justify-center items-center w-full bottom-0">
-                  <img src={person} className="max-w-[40%] xl:max-w-[100%]" alt="Background" />
+                  <img src={person} className="max-w-[40%] xl:max-w-[55%]" alt="Background" />
                   <div className="video-bar w-full flex justify-between items-center py-[14px] px-[20px]">
                     <div className="flex gap-[40px]">
                       <img src={addUser} alt="Background" />
