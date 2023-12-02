@@ -104,7 +104,7 @@ function Home() {
   return (
     <div className="bg-darkColor flex flex-col h-screen w-screen overflow-y-hidden">
       {/* Header */}
-      <div className="flex justify-between items-center py-2 px-[54px]">
+      <div className="h-[10%] flex justify-between items-center py-2 px-[54px]">
         <div className="flex gap-[54px] items-center py-[18px] xl:py-[24px]">
           <Switch
             onChange={onChange}
@@ -125,15 +125,16 @@ function Home() {
       <hr className="divider" />
 
       {/* Skype */}
-      <div className="flex-1 flex">
+      <div className="h-[90%] flex">
         <div className="flex-1 flex flex-col">
-          <div className="w-full flex gap-[24px] items-center py-[22px] px-[44px]">
+          <div className="h-[10%] w-full flex gap-[24px] items-center py-[22px] px-[44px]">
             <div className="w-[8px] h-[8px] rounded-full bg-yellow"></div>
             <p>LiiVE</p>
           </div>
-          <div className="flex-1 flex gap-[10px]">
+          <div className="h-[90%] flex gap-[10px]">
+            {/* Aside */}
             <div className="w-[400px] bg-bgSide flex flex-col">
-              <div className="py-[20px] px-[22px] flex flex-col gap-[26px]">
+              <div className="h-[25%] py-[20px] px-[22px] flex flex-col gap-[26px]">
                 <Input
                   size="large"
                   placeholder="Contacts, groupes, messages"
@@ -154,8 +155,8 @@ function Home() {
 
               <hr className="divider" />
               {/* Liste des messages */}
-              <div className="py-[20px] px-[22px] flex flex-col gap-[48px] overflow-y-hidden">
-                <div className="h-[5%] flex">
+              <div className="h-[75%] py-[20px] px-[22px] flex flex-col gap-[48px] overflow-y-hidden">
+                <div className="h-[10%] flex">
                   <div className="flex-1 flex flex-col gap-[12px] items-center">
                     <div className="flex gap-[8px]">
                       <p className="text-violet">Conversations</p>
@@ -175,7 +176,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="h-[45%] xl:h-[65%] flex flex-col overflow-y-auto">
+                <div className="h-[80%] flex flex-col overflow-y-auto">
                   {dataMessage.map((item, index) => (
                     <div key={index} className="flex p-[16px]">
                       <div className="flex-1 flex gap-[18px]">
@@ -196,7 +197,8 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="h-[70%] xl:flex-1 xl:h-[85%] flex flex-col">
+            {/* Video section */}
+            <div className="flex-1 flex flex-col">
               <div className="relative video-bloc flex-1 bg-grise flex flex-col">
                 <div className="video-bar flex justify-between items-center py-[14px] px-[20px]">
                   <div className="flex gap-[12px]">
@@ -249,7 +251,7 @@ function Home() {
           </div>
         </div>
         <div className="w-[400px] flex flex-col p-[16px]">
-          <div className="h-[5%]">
+          <div className="h-[10%]">
             <div className="flex flex-col gap-[12px] items-center w-full">
               <div className="flex justify-between w-full px-[16px]">
                 <p className="w-full text-center">Conversations</p>
@@ -259,10 +261,10 @@ function Home() {
             </div>
           </div>
           {/* conversation */}
-          <div className="h-[70%] xl:h-[77%] relative">
+          <div className="h-[85%] relative">
             <div
               ref={chatContainerRef}
-              className="flex flex-col gap-8 items-end w-full max-h-[70vh] overflow-y-auto"
+              className="h-[80%] flex flex-col gap-8 items-end w-full overflow-y-auto"
             >
               {/* current host */}
               <div className="flex flex-col justify-end items-end w-auto max-w-[70%]">
