@@ -175,7 +175,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="h-[45%] xl:h-[85%] flex flex-col overflow-y-auto">
+                <div className="h-[45%] xl:h-[65%] flex flex-col overflow-y-auto">
                   {dataMessage.map((item, index) => (
                     <div key={index} className="flex p-[16px]">
                       <div className="flex-1 flex gap-[18px]">
@@ -196,7 +196,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="h-[70%] xl:flex-1 xl:h-[100%] flex flex-col">
+            <div className="h-[70%] xl:flex-1 xl:h-[85%] flex flex-col">
               <div className="relative video-bloc flex-1 bg-grise flex flex-col">
                 <div className="video-bar flex justify-between items-center py-[14px] px-[20px]">
                   <div className="flex gap-[12px]">
@@ -215,7 +215,7 @@ function Home() {
                   <img src={smallPerson} alt="Background" />
                 </div>
                 <div className="absolute flex flex-col justify-center items-center w-full bottom-0">
-                  <img src={person} className="max-w-[40%] xl:max-w-[55%]" alt="Background" />
+                  <img src={person} className="max-w-[40%]" alt="Background" />
                   <div className="video-bar w-full flex justify-between items-center py-[14px] px-[20px]">
                     <div className="flex gap-[40px]">
                       <img src={addUser} alt="Background" />
@@ -259,7 +259,7 @@ function Home() {
             </div>
           </div>
           {/* conversation */}
-          <div className="h-[70%] xl:h-[90%] relative">
+          <div className="h-[70%] xl:h-[77%] relative">
             <div
               ref={chatContainerRef}
               className="flex flex-col gap-8 items-end w-full max-h-[70vh] overflow-y-auto"
